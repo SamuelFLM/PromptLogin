@@ -1,0 +1,17 @@
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.csproj.AssemblyReference.cache
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.AssemblyInfoInputs.cache
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.AssemblyInfo.cs
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.csproj.CoreCompileInputs.cache
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\bin\Debug\net7.0\Src.exe
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\bin\Debug\net7.0\Src.deps.json
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\bin\Debug\net7.0\Src.runtimeconfig.json
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\bin\Debug\net7.0\Src.dll
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\bin\Debug\net7.0\Src.pdb
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\bin\Debug\net7.0\Newtonsoft.Json.dll
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.csproj.CopyComplete
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.dll
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\refint\Src.dll
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.pdb
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\Src.genruntimeconfig.cache
+C:\Users\Lazer\OneDrive\Área de Trabalho\Login\Src\obj\Debug\net7.0\ref\Src.dll

@@ -11,8 +11,6 @@ namespace API.Repositories
     {
         List<Pessoa> ObterTodos();
         Pessoa ObterPorId(int id);
-        Pessoa ObterPorNome(string nome);
-        Pessoa ObterPorEmail(string email);
         void Adicionar(Pessoa pessoa);
         void Alterar(Pessoa pessoa);
         void Deletar(Pessoa pessoa);

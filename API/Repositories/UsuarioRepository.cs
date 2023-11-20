@@ -34,20 +34,10 @@ namespace API.Repositories
             _context.User.Remove(pessoa);
             _context.SaveChanges();
         }
-
-        public Pessoa ObterPorEmail(string email)
-        {
-            return (Pessoa)_context.User.Where(x => x.Email.Contains(email));
-        }
-
+     
         public Pessoa ObterPorId(int id)
         {
             return _context.User.SingleOrDefault(e => e.Id == id);
-        }
-
-        public Pessoa ObterPorNome(string nome)
-        {
-            return (Pessoa)_context.User.Where(x => x.Nome.Contains(nome));
         }
 
         public List<Pessoa> ObterTodos()
