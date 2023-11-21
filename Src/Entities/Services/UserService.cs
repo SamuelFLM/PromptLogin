@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 using System.Xml.Schema;
 using Newtonsoft.Json;
 using Src.Entities;
+using Src.DTOs;
 
 namespace Src.Entities.Services
 {
-    public class UserService
+    public class UserService : IUserService
     {
         private readonly HttpClient _http;
         private readonly string _url;
@@ -57,7 +58,7 @@ namespace Src.Entities.Services
             return null;
         }
 
-        public async Task<User> Criar(User user)
+        public async Task<User> Criar(AdicionarUser user)
         {
             try
             {
@@ -79,14 +80,14 @@ namespace Src.Entities.Services
             return null;
         }
 
-        public async Task<User> Atualizar(User user)
+        public async Task<User> Atualizar(AtualizarUser user, int id)
         {
             try
             {
                 string jsonString = JsonConvert.SerializeObject(user);
                 StringContent content = new StringContent(jsonString, Encoding.UTF8, "application/json");
 
-                var response = await _http.PutAsync($"{_url}/{user.Id}", content);
+                var response = await _http.PutAsync($"{_url}/{id}", content);
                 var responseString = await response.Content.ReadAsStringAsync();
 
                 var objJson = JsonConvert.DeserializeObject<User>(responseString);
