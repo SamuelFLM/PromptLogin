@@ -12,72 +12,47 @@ internal class Program
     {
 
         UserService service = new();
-        Menu menu = new();
 
-        var u = await service.ObterTodos();
+        var users = await service.ObterTodos();
 
-        bool validation = true;
-        byte opcao = 0;
-        do
-        {
-            menu.Principal();
-            byte.TryParse(Console.ReadLine(), out byte resultado);
+        List<User> usuario = new();
 
-            if (resultado != 0 && resultado is 1 || resultado is 2)
-            {
-                opcao = resultado;
-                validation = false;
-            }
-            else
-            {
-                Console.WriteLine("\t\nPor favor! Digite apenas 1 ou 2. Para sair -> 'Ctrl' + 'c'".ToUpper());
-                Console.ReadKey();
-            }
+        foreach (var user in users)
+            usuario.Add(user);
 
-        } while (validation);
+        Fluxo fluxo = new(usuario);
 
-        switch (opcao)
-        {
-            case 1:
-                break;
-
-            case 2:
-                break;
-
-            default:
-                break;
-        }
-
-
-
-
-
-
-        // User user = await service.ObterPorId(1);
-        // List<string> dados = new()
-        // {
-        //     user.Id.ToString(),
-        //     user.Nome,
-        //     user.Email,
-        //     user.senha
-        // };
-
-        // dados.ForEach(l => Console.WriteLine(l));
-
-
-        // AtualizarUser atualizar = new AtualizarUser("Samuca", "Samuca@gmail.com", "12345");
-
-        // var put = await service.Atualizar(atualizar, 3);
-
-
-        // var deletar = await service.Deletar(3);
-
-        // if (deletar)
-        //     Console.WriteLine("Usuario excluido!");
+        fluxo.TelaInicial();
 
     }
 
 
 
+
+
+
+    // User user = await service.ObterPorId(1);
+    // List<string> dados = new()
+    // {
+    //     user.Id.ToString(),
+    //     user.Nome,
+    //     user.Email,
+    //     user.senha
+    // };
+
+    // dados.ForEach(l => Console.WriteLine(l));
+
+
+    // AtualizarUser atualizar = new AtualizarUser("Samuca", "Samuca@gmail.com", "12345");
+
+    // var put = await service.Atualizar(atualizar, 3);
+
+
+    // var deletar = await service.Deletar(3);
+
+    // if (deletar)
+    //     Console.WriteLine("Usuario excluido!");
+
 }
+
 

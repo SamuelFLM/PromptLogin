@@ -27,12 +27,17 @@ namespace Src.Models
 
         public void Login()
         {
-
+            Console.Clear();
+            Console.WriteLine("*****************************************");
+            Console.WriteLine($"\t\tlogin\n".ToUpper());
         }
+
 
         public void Registrar()
         {
-
+            Console.Clear();
+            Console.WriteLine("*****************************************");
+            Console.WriteLine($"\t\tregister\n".ToUpper());
         }
 
         public void ObterTodos()
@@ -61,9 +66,11 @@ namespace Src.Models
 
         }
 
-        public void Sair()
-        {
-
+        public void Continuar(){
+            Console.WriteLine("\t\nParece que tem algo de errado deseja continuar?".ToUpper());
+            Console.WriteLine("1 - sim\n".ToUpper());
+            Console.WriteLine("2 - voltar\n".ToUpper());
+            Console.Write("Digite: ");
         }
 
     }
