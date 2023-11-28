@@ -1,2 +1,2 @@
 # SistemaDeCadastroELogin
-SISTEMA.
+SISTEMA
